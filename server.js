@@ -25,3 +25,14 @@ app.use(express.static('website'));
 app.listen(port,()=>{
     console.log("my server running in port: " + port);
 });
+
+// GET route setup response send projectData
+app.get('/ressendprojectData', (req, res) => {
+    res.send(projectData);
+});
+
+// POST route setup 
+app.post('/saveprojectData', (req, res) =>{
+    projectData = {... req.body};
+    res.end();
+});
