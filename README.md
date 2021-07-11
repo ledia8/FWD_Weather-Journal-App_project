@@ -32,3 +32,4 @@ If you are interested in testing your code as you go, you can use `tests.js` as 
     1- Naming HTML Inputs and Buttons For Interaction
     2- Assigning Element Properties Dynamically
     3- Event Listeners on generate button in app.js file
+    4- Dynamically Update UI
