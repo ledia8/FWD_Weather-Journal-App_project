@@ -28,8 +28,21 @@ generatButton.addEventListener('click', async ()=>{
             feelings: feelings
         })
     });
+    const res2 = await fetch('/getprojectData',{
+        credentials:"same-origin"
+    });
 
+    const data2 = await res2.json();
+    showWeatherData(data2)
 
+    console.log(data2);
 });
-// const data2 = await res2.JSON();
-// console.log(data2);
+
+function showWeatherData(data2){
+    const date_div = document.getElementById("date");
+    const temp_div = document.getElementById("temp");
+    const content_div = document.getElementById("content");
+    date_div.innerHTML = "Date: " + data2.date;
+    temp_div.innerHTML = "Temperature: " + data2.temp;
+    content_div.innerHTML = "Feelings: " + data2.feelings;
+}

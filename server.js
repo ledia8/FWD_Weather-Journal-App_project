@@ -27,7 +27,7 @@ app.listen(port,()=>{
 });
 
 // GET route setup response send projectData
-app.get('/ressendprojectData', (req, res) => {
+app.get('/getprojectData', (req, res) => {
     res.send(projectData);
 });
 

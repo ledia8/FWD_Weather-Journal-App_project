@@ -25,4 +25,10 @@ If you are interested in testing your code as you go, you can use `tests.js` as 
         - The personal API Key for OpenWeatherMap API is saved in a named const apiKey.
         - The API Key variable is passed as a parameter to fetch() .
         -  Data is successfully returned from the external API (use fetch to get temp from data).
-            
+    3- Return Endpoint Data -Server Side- the route name is 'getprojectData'
+    4- Return Endpoint Data -Client Side- the route name is 'saveprojectData' 
+    5- POST Route   
+* Dynamic UI
+    1- Naming HTML Inputs and Buttons For Interaction
+    2- Assigning Element Properties Dynamically
+    3- Event Listeners on generate button in app.js file
